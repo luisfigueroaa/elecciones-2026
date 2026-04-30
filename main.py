@@ -38,7 +38,7 @@ for dep in departamentos["data"]:
     nombre_dep = dep.get('nombre')
     
     lista_dep_html += '<span>'
-    lista_dep_html += f'[<a href="#" class="enlace-mapa" data-img="{ubigeo}.png">{nombre_dep}</a>]&nbsp\n'
+    lista_dep_html += f'[<a href="#mapa" class="enlace-mapa" data-img="{ubigeo}.png">{nombre_dep}</a>]&nbsp\n'
     lista_dep_html += '</span>'
 
 # Hacer el reemplazo
