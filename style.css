@@ -7,7 +7,6 @@ body {
 .dashboard-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 90%;
 }
 
@@ -31,12 +30,16 @@ footer {
 
 .main-content {
     display: flex;
-    /* Layout Web 2.0 */
+    align-items: flex-start;
     flex-grow: 1;
-    overflow: hidden;
-    /* Evita scrolls extraños */
     gap: 10px;
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
 }
 
 /* El Mapa: Contenedor para tu SVG/GeoJSON */
