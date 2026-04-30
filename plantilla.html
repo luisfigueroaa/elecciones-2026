@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizador ONPE - Resultados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Elecciones Perú 2026 Primera Vuelta <span style="font-weight: 100; font-size: small;"><i>Visualización de Resultados</i></span></h1>
+        <img style="margin-left: 10px" src="images/onpe.gif" alt="">
+        <img style="margin-left: 10px" src="images/peru.gif" alt="">
+    </header>
+
+    <div class="dashboard-wrapper">
+
+        <div style="padding: 10px;">
+        <p>Este sitio Web tiene datos de un <b>mapa coroplético</b> con datos de
+        la ONPE de las <span style="color: blue;"><b>elecciones generales
+        2026</b></span>.  El motivo de este sitio web es poder visualizar los
+        datos coropléticos <span style="color: red;"><b>sin APIs ni librerías
+        Javascript complejas</b></span> y con una visualización directa.</p>
+
+        <p>Los resultados se pueden consultar aquí:
+        <a href="https://resultadoelectoral.onpe.gob.pe/main/presidenciales">ONPE - PRESENTACIÓN DE RESULTADOS</a>
+        </p>
+        
+
+        </div>
+
+        <div class="main-content">
+            <div class="map-section" id="map-container">
+                <img src="mapas/peru.png" alt="" id="mapa" width="100%">
+                <div class="departamentos">
+                <p>Departamentos:</p>
+                <p>
+                {{lista-departamentos}}
+                </p>
+                </div>
+            </div>
+
+            <div class="stats-panel">
+                <h3>Resultados totales</h3>
+            <table style="font-size: smaller;">
+                <thead>
+                    <tr>
+                        <th>AGRUPACIÓN POLÍTICA</th>
+                        <th>CANDIDATO / AGRUPACIÓN</th>
+                        <th class="num">TOTAL VOTOS</th>
+                        <th class="num">% VALIDOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{tabla-resultados}}
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        Desarrollo: Luxio <img src="images/luxio.gif" alt="" height="12px">. Fuente: ONPE.
+    </footer>
+
+</body>
+<script type="module" src="main.js"></script>
+</html>

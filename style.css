@@ -1,0 +1,93 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    margin: 0;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 90%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    color: white;
+    background-color: #002292;
+}
+
+header,
+footer {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    /* Layout Web 2.0 */
+    flex-grow: 1;
+    overflow: hidden;
+    /* Evita scrolls extraños */
+    gap: 10px;
+    padding: 10px;
+}
+
+/* El Mapa: Contenedor para tu SVG/GeoJSON */
+.map-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #000;
+}
+
+/* Panel lateral de datos */
+.stats-panel {
+    flex: 3;
+    overflow-y: auto;
+    /* Scroll independiente para la tabla */
+    padding: 15px;
+    border: 1px solid #000;
+}
+
+/* Tabla de resultados */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Utilidades */
+.controls {
+    margin-bottom: 15px;
+    border-bottom: 1px double #000;
+    padding-bottom: 10px;
+}
+
+.num { 
+    text-align: right; 
+}
+
+.departamentos {
+    text-align: center;
+    padding: 10px;
+}
+
+.departamentos a {
+    white-space: nowrap;
+}

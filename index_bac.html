@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizador ONPE - Resultados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Elecciones Perú 2026 Primera Vuelta <span style="font-weight: 100; font-size: small;"><i>Visualización de Resultados</i></span></h1>
+        <img style="margin-left: 10px" src="images/onpe.gif" alt="">
+        <img style="margin-left: 10px" src="images/peru.gif" alt="">
+    </header>
+
+    <div class="dashboard-wrapper">
+
+        <div style="padding: 10px;">
+        <p>Este sitio Web tiene datos de un <b>mapa coroplético</b> con datos de la
+        ONPE de las <span style="color: blue;"><b>elecciones generales 2026</b></span>.
+        El motivo de este sitio web es poder visualizar los datos coropléticos
+        <span style="color: red;"><b>sin APIs ni librerías Javascript
+        complejas</b></span> y con una visualización directa.</p>
+
+        <p>Los resultados se pueden consultar aquí:
+        <a href="https://resultadoelectoral.onpe.gob.pe/main/presidenciales">ONPE - PRESENTACIÓN DE RESULTADOS</a>
+        </p>
+        
+
+        </div>
+
+        <div class="main-content">
+            <div class="map-section" id="map-container">
+                <img src="mapas/peru.png" alt="" id="mapa" width="100%">
+                <p>Departamentos:
+                <ul>
+                    <li><a href="" class="enlace-mapa" data-img="arequipa.jpg">Arequipa</a></li>
+                    <li><a href="" class="enlace-mapa" data-img="lima.jpg">Lima</a></li>
+                </ul>
+</p>
+            </div>
+
+            <div class="stats-panel">
+                <h3>Detalle de Votación</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Candidato / Partido</th>
+                            <th>Votos</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Partido A</td>
+                            <td>15,400</td>
+                            <td>45%</td>
+                        </tr>
+                        <tr>
+                            <td>Partido B</td>
+                            <td>10,200</td>
+                            <td>30%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            Desarrollo: Luxio <img src="images/luxio.gif" alt="" height="12px">. Fuente: ONPE.
+        </footer>
+    </div>
+
+</body>
+<script type="module" src="main.js"></script>
+</html>

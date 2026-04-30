@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizador ONPE - Resultados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Elecciones Perú 2026 Primera Vuelta <span style="font-weight: 100; font-size: small;"><i>Visualización de Resultados</i></span></h1>
+        <img style="margin-left: 10px" src="images/onpe.gif" alt="">
+        <img style="margin-left: 10px" src="images/peru.gif" alt="">
+    </header>
+
+    <div class="dashboard-wrapper">
+
+        <div style="padding: 10px;">
+        <p>Este sitio Web tiene datos de un <b>mapa coroplético</b> con datos de
+        la ONPE de las <span style="color: blue;"><b>elecciones generales
+        2026</b></span>.  El motivo de este sitio web es poder visualizar los
+        datos coropléticos <span style="color: red;"><b>sin APIs ni librerías
+        Javascript complejas</b></span> y con una visualización directa.</p>
+
+        <p>Los resultados se pueden consultar aquí:
+        <a href="https://resultadoelectoral.onpe.gob.pe/main/presidenciales">ONPE - PRESENTACIÓN DE RESULTADOS</a>
+        </p>
+        
+
+        </div>
+
+        <div class="main-content">
+            <div class="map-section" id="map-container">
+                <img src="mapas/peru.png" alt="" id="mapa" width="100%">
+                <div class="departamentos">
+                <p>Departamentos:</p>
+                <p>
+                <span>[<a href="#" class="enlace-mapa" data-img="010000.png">AMAZONAS</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="020000.png">ÁNCASH</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="030000.png">APURÍMAC</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="040000.png">AREQUIPA</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="050000.png">AYACUCHO</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="060000.png">CAJAMARCA</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="240000.png">CALLAO</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="070000.png">CUSCO</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="080000.png">HUANCAVELICA</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="090000.png">HUÁNUCO</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="100000.png">ICA</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="110000.png">JUNÍN</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="120000.png">LA LIBERTAD</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="130000.png">LAMBAYEQUE</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="140000.png">LIMA</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="150000.png">LORETO</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="160000.png">MADRE DE DIOS</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="170000.png">MOQUEGUA</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="180000.png">PASCO</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="190000.png">PIURA</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="200000.png">PUNO</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="210000.png">SAN MARTÍN</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="220000.png">TACNA</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="230000.png">TUMBES</a>]&nbsp
+</span><span>[<a href="#" class="enlace-mapa" data-img="250000.png">UCAYALI</a>]&nbsp
+</span>
+                </p>
+                </div>
+            </div>
+
+            <div class="stats-panel">
+                <h3>Resultados totales</h3>
+            <table style="font-size: smaller;">
+                <thead>
+                    <tr>
+                        <th>AGRUPACIÓN POLÍTICA</th>
+                        <th>CANDIDATO / AGRUPACIÓN</th>
+                        <th class="num">TOTAL VOTOS</th>
+                        <th class="num">% VALIDOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+    <tr>
+        <td>FUERZA POPULAR</td>
+        <td>KEIKO SOFIA FUJIMORI HIGUCHI</td>
+        <td class="num">2,780,814</td>
+        <td class="num">17.095%</td>
+    </tr>
+    <tr>
+        <td>VOTOS EN BLANCO</td>
+        <td>VOTOS EN BLANCO</td>
+        <td class="num">2,289,979</td>
+        <td class="num">0.000%</td>
+    </tr>
+    <tr>
+        <td>JUNTOS POR EL PERÚ</td>
+        <td>ROBERTO HELBERT SANCHEZ PALOMINO</td>
+        <td class="num">1,958,074</td>
+        <td class="num">12.037%</td>
+    </tr>
+    <tr>
+        <td>RENOVACIÓN POPULAR</td>
+        <td>RAFAEL BERNARDO LÓPEZ ALIAGA CAZORLA</td>
+        <td class="num">1,932,559</td>
+        <td class="num">11.880%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO DEL BUEN GOBIERNO</td>
+        <td>JORGE NIETO MONTESINOS</td>
+        <td class="num">1,790,391</td>
+        <td class="num">11.006%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO CÍVICO OBRAS</td>
+        <td>RICARDO PABLO BELMONT CASSINELLI</td>
+        <td class="num">1,653,956</td>
+        <td class="num">10.168%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO PAÍS PARA TODOS</td>
+        <td>CARLOS GONSALO ALVAREZ LOAYZA</td>
+        <td class="num">1,285,451</td>
+        <td class="num">7.902%</td>
+    </tr>
+    <tr>
+        <td>AHORA NACIÓN - AN</td>
+        <td>PABLO ALFONSO LOPEZ CHAU NAVA</td>
+        <td class="num">1,191,511</td>
+        <td class="num">7.325%</td>
+    </tr>
+    <tr>
+        <td>VOTOS NULOS</td>
+        <td>VOTOS NULOS</td>
+        <td class="num">991,452</td>
+        <td class="num">0.000%</td>
+    </tr>
+    <tr>
+        <td>PRIMERO LA GENTE – COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO</td>
+        <td>MARIA SOLEDAD PEREZ TELLO</td>
+        <td class="num">556,623</td>
+        <td class="num">3.422%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO SICREO</td>
+        <td>ALFONSO CARLOS ESPA Y GARCES-ALVEAR</td>
+        <td class="num">546,959</td>
+        <td class="num">3.362%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO FRENTE DE LA ESPERANZA 2021</td>
+        <td>LUIS FERNANDO OLIVERA VEGA</td>
+        <td class="num">300,811</td>
+        <td class="num">1.849%</td>
+    </tr>
+    <tr>
+        <td>PODEMOS PERÚ</td>
+        <td>JOSE LEON LUNA GALVEZ</td>
+        <td class="num">258,198</td>
+        <td class="num">1.587%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO POLÍTICO COOPERACIÓN POPULAR</td>
+        <td>YONHY LESCANO ANCIETA</td>
+        <td class="num">210,743</td>
+        <td class="num">1.296%</td>
+    </tr>
+    <tr>
+        <td>ALIANZA PARA EL PROGRESO</td>
+        <td>CESAR ACUÑA PERALTA</td>
+        <td class="num">185,504</td>
+        <td class="num">1.140%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO APRISTA PERUANO</td>
+        <td>PITTER ENRIQUE VALDERRAMA PEÑA</td>
+        <td class="num">156,873</td>
+        <td class="num">0.964%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO DEMOCRÁTICO SOMOS PERÚ</td>
+        <td>GEORGE PATRICK FORSYTH SOMMER</td>
+        <td class="num">145,903</td>
+        <td class="num">0.897%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO PATRIÓTICO DEL PERÚ</td>
+        <td>HERBERT CALLER GUTIERREZ</td>
+        <td class="num">140,176</td>
+        <td class="num">0.862%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO POLÍTICO PERÚ PRIMERO</td>
+        <td>MARIO ENRIQUE VIZCARRA CORNEJO</td>
+        <td class="num">139,580</td>
+        <td class="num">0.858%</td>
+    </tr>
+    <tr>
+        <td>ALIANZA ELECTORAL VENCEREMOS</td>
+        <td>RONALD DARWIN ATENCIO SOTOMAYOR</td>
+        <td class="num">136,796</td>
+        <td class="num">0.841%</td>
+    </tr>
+    <tr>
+        <td>UN CAMINO DIFERENTE</td>
+        <td>ROSARIO DEL PILAR FERNANDEZ BAZAN</td>
+        <td class="num">125,647</td>
+        <td class="num">0.772%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO DEMÓCRATA UNIDO PERÚ</td>
+        <td>CHARLIE CARRASCO SALAZAR</td>
+        <td class="num">115,679</td>
+        <td class="num">0.711%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO POLÍTICO NACIONAL PERÚ LIBRE</td>
+        <td>VLADIMIR ROY CERRON ROJAS</td>
+        <td class="num">97,411</td>
+        <td class="num">0.599%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO MORADO</td>
+        <td>MESIAS ANTONIO GUEVARA AMASIFUEN</td>
+        <td class="num">79,896</td>
+        <td class="num">0.491%</td>
+    </tr>
+    <tr>
+        <td>UNIDAD NACIONAL</td>
+        <td>ROBERTO ENRIQUE CHIABRA LEON</td>
+        <td class="num">65,808</td>
+        <td class="num">0.405%</td>
+    </tr>
+    <tr>
+        <td>PROGRESEMOS</td>
+        <td>PAUL DAVIS JAIMES BLANCO</td>
+        <td class="num">64,090</td>
+        <td class="num">0.394%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO DEMÓCRATA VERDE</td>
+        <td>ALEX GONZALES CASTILLO</td>
+        <td class="num">62,016</td>
+        <td class="num">0.381%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO POLÍTICO INTEGRIDAD DEMOCRÁTICA</td>
+        <td>WOLFGANG MARIO GROZO COSTA</td>
+        <td class="num">61,860</td>
+        <td class="num">0.380%</td>
+    </tr>
+    <tr>
+        <td>LIBERTAD POPULAR</td>
+        <td>RAFAEL JORGE BELAUNDE LLOSA</td>
+        <td class="num">39,647</td>
+        <td class="num">0.244%</td>
+    </tr>
+    <tr>
+        <td>AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL</td>
+        <td>JOSE DANIEL WILLIAMS ZAPATA</td>
+        <td class="num">31,531</td>
+        <td class="num">0.194%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO POLÍTICO PERÚ ACCIÓN</td>
+        <td>FRANCISCO ERNESTO DIEZ-CANSECO TÁVARA</td>
+        <td class="num">30,680</td>
+        <td class="num">0.189%</td>
+    </tr>
+    <tr>
+        <td>FUERZA Y LIBERTAD</td>
+        <td>FIORELLA GIANNINA MOLINELLI ARISTONDO</td>
+        <td class="num">26,397</td>
+        <td class="num">0.162%</td>
+    </tr>
+    <tr>
+        <td>FE EN EL PERÚ</td>
+        <td>ALVARO GONZALO PAZ DE LA BARRA FREIGEIRO</td>
+        <td class="num">22,600</td>
+        <td class="num">0.139%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO DEMOCRATICO FEDERAL</td>
+        <td>ARMANDO JOAQUIN MASSE FERNANDEZ</td>
+        <td class="num">21,105</td>
+        <td class="num">0.130%</td>
+    </tr>
+    <tr>
+        <td>SALVEMOS AL PERÚ</td>
+        <td>ANTONIO ORTIZ VILLANO</td>
+        <td class="num">17,038</td>
+        <td class="num">0.105%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO POLÍTICO PRIN</td>
+        <td>WALTER GILMER CHIRINOS PURIZAGA</td>
+        <td class="num">14,062</td>
+        <td class="num">0.086%</td>
+    </tr>
+    <tr>
+        <td>PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE - PERÚ</td>
+        <td>NAPOLEON BECERRA GARCIA</td>
+        <td class="num">11,118</td>
+        <td class="num">0.068%</td>
+    </tr>
+    <tr>
+        <td>PERÚ MODERNO</td>
+        <td>CARLOS ERNESTO JAICO CARRANZA</td>
+        <td class="num">9,477</td>
+        <td class="num">0.058%</td>
+    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        Desarrollo: Luxio <img src="images/luxio.gif" alt="" height="12px">. Fuente: ONPE.
+    </footer>
+
+</body>
+<script type="module" src="main.js"></script>
+</html>

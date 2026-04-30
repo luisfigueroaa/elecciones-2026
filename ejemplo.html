@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ONPE - Visualizador Arequipa</title>
+    <style>
+        /* CSS ORGANIZADO - ESTILO RETRO HTML 2.0 */
+        body {
+            background-color: #C0C0C0; /* Gris clásico Windows 95 */
+            color: #000000;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Control del Header e Imagen */
+        header {
+            background-color: #000080; /* Azul Marino */
+            padding: 10px;
+            border-bottom: 2px solid #000000;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-img {
+            width: 80px;  /* Tamaño fijo para evitar deformación */
+            height: 50px;
+            border: 2px inset #FFFFFF;
+            background-color: #FFFFFF;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            color: #FFFFFF;
+            margin: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        /* Layout de columnas */
+        .main-wrapper {
+            display: flex;
+            padding: 15px;
+            gap: 10px;
+        }
+
+        /* Seccion del Mapa Coropletico */
+        .map-area {
+            flex: 2;
+            background-color: #FFFFFF;
+            border: 3px inset #808080;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Panel de Datos */
+        .data-panel {
+            flex: 1;
+            background-color: #D9D9D9;
+            border: 3px inset #808080;
+            padding: 10px;
+        }
+
+        /* Estilo de Tabla HTML 2.0 */
+        table {
+            width: 100%;
+            border: 2px solid #000000;
+            border-collapse: collapse;
+            background-color: #FFFFFF;
+        }
+
+        th {
+            background-color: #808080;
+            color: #FFFFFF;
+            border: 1px solid #000000;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        td {
+            border: 1px solid #000000;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        .footer {
+            clear: both;
+            border-top: 2px solid #000000;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.gif" alt="ONPE" class="header-img">
+    <h1>Resultados Arequipa 2026</h1>
+</header>
+
+<div class="main-wrapper">
+    <div class="map-area">
+        <p><strong>VISUALIZACION GEOGRAFICA (MAPA COROPLETICO)</strong></p>
+        <hr>
+        <img src="mapa_preview.png" width="400" height="300" border="1" alt="Mapa de Arequipa">
+        <p><em>Escala de participacion ciudadana por distrito</em></p>
+    </div>
+
+    <div class="data-panel">
+        <p align="center"><strong>ESTADISTICAS</strong></p>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>DISTRITO</th>
+                    <th>VOTOS</th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CERVADO</td>
+                    <td>45,200</td>
+                    <td>52%</td>
+                </tr>
+                <tr>
+                    <td>YANAHUARA</td>
+                    <td>12,450</td>
+                    <td>68%</td>
+                </tr>
+                <tr>
+                    <td>CAYMA</td>
+                    <td>31,100</td>
+                    <td>49%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><small>* Datos actualizados segun ultimo reporte ONPE.</small></p>
+    </div>
+</div>
+
+<div class="footer">
+    AETHERON SYSTEMS - AREQUIPA, PERU
+</div>
+
+</body>
+</html>
